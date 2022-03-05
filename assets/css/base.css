@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #ff385c;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+    --border-color: #ddd;
+
+    --header-height: 160px;
+    --navbar-height: 80px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* 100% = 16 px => 62.5% = 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

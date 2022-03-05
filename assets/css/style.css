@@ -1,0 +1,222 @@
+.app {
+    overflow: hidden;
+}
+
+
+/* Header */
+.app__header {
+    height: var(--header-height);
+    background-color: var(--black-color);
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+    padding: 20px 0 16px;
+    /* line-height: var(--navbar-height); */
+}
+
+.header__logo {
+    /* width: 240px;
+    cursor: default; */
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+    display: block;
+    line-height: 3.6rem;
+    -webkit-tap-highlight-color: transparent;
+    margin-right: 120px;
+}
+
+.header__logo-img {
+    fill: var(--white-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.nav__item {
+    font-size: 1.6rem;
+    padding: 10px 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    opacity: 0.8;
+}
+
+.nav__item.nav__item-selected::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    left: 56px;
+    bottom: 0;
+    border-radius: 1px;
+    background-color: var(--white-color);
+}
+
+.nav__item-selected:hover {
+    opacity: 1;
+}
+
+
+/* Subnav */
+.subnav-list {
+    display: flex;
+    align-items: center;
+}
+
+.subnav__item-btn {
+    display: flex;
+    border: none;
+    padding: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 20px;
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.subnav__item-btn:hover {
+    background-color: #262626;
+}
+
+.subnav__icon {
+    font-size: 1.5rem;
+}
+
+/* Subnav: User login layout */
+.nav__user {
+
+}
+
+.subnav__item-white-btn {
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin-left: 8px;
+}
+
+.subnav__user-img {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+
+/* ----- Header with search ----- */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+    width: 850px;
+    margin: auto;
+}
+
+.header-searchbar {
+    display: flex;
+    flex: 1;
+    height: 66px;
+    border-radius: 32px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background-color: var(--white-color);
+}
+
+.header-searchbar__item {
+    padding: 14px 76px 14px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-searchbar__item-wrapper {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+}
+
+/* .header-searchbar--separator::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #ddd;
+    height: 32px;
+    transform: translateY(25%);
+    
+} */
+
+.header-searchbar__item-input {
+    padding: 14px 72px 14px 30px;
+}
+
+.header-searchbar__label {
+    display: block;
+}
+
+.header-searchbar__label,
+.header-searchbar__item h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.header-searchbar__item-input:hover,
+.header-searchbar__item:hover,
+.header-searchbar__item-wrapper:hover {
+    border-radius: 31px;
+    background-color: #ebebeb;
+}
+
+.header-searchbar__input {
+    display: block;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #717171;
+    font-weight: 100;
+    background: none;
+    text-overflow: ellipsis;
+}
+
+.header-searchbar__item-desc {
+    font-size: 1.4rem;
+    color: #717171;
+    cursor: pointer;
+}
+
+.header-searchbar__btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.header-searchbar__btn-icon {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
