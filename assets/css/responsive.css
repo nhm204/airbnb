@@ -1,0 +1,138 @@
+.hide-on-pc {
+    display: none;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    :root {
+        --header-height: 80px;
+    }
+    
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .app__header {
+        background-color: var(--white-color);
+    }
+
+    .header__logo {
+        width: 30px;
+    }
+
+    .tablet-header__logo-link {
+        color: transparent;
+        text-decoration: none;
+        display: block;
+        line-height: 3.6rem;
+        -webkit-tap-highlight-color: transparent;
+        margin-right: 120px;
+    }
+
+    .header__logo-img {
+        fill: var(--primary-color);
+    }
+
+    .sub-searchbar-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 280px;
+        height: 48px;
+        border-radius: 40px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+        margin-left: -40px;
+    }
+
+    .sub-searchbar__content {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--text-color);
+        padding-left: 24px;
+    }
+
+    .header-searchbar__btn {
+        min-width: 32px;
+        height: 32px;
+    }
+
+    .header-searchbar__btn-icon {
+        font-size: 1.2rem;
+    }
+    
+    
+
+    
+
+
+
+
+    .intro-section {
+        margin-top: 80px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    
+
+    .subnav__item-btn {
+        color: var(--text-color);
+    }
+
+    .intro__img--tablet {
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        filter: brightness(0.7) contrast(1.2) saturate(1.8);
+        margin: 0 auto;
+    }
+
+    .intro__title {
+        font-size: 3.2rem;
+    }
+
+    .intro__btn {
+        padding: 12px 24px;
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .intro__img--mobile {
+        display: block;
+        width: 90%;
+        border-radius: 12px;
+        filter: brightness(0.7) contrast(1.2) saturate(1.8);
+        margin: 0 auto;
+    }
+
+    .intro__content {
+        top: 55%;
+    }
+
+    .intro__title {
+        font-size: 2.8rem;
+        width: 260px;
+        text-align: center;
+    }
+
+    .intro__btn {
+        padding: 10px 22px;
+        font-size: 1.5rem;
+    }
+}

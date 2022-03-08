@@ -4,8 +4,9 @@
     --black-color: #000;
     --text-color: #222;
     --border-color: #ddd;
+    --background-color: #ebebeb;
 
-    --header-height: 160px;
+    --header-height: 156px; /* 156 */
     --navbar-height: 80px;
     --header-with-search: calc(var(--header-height) - var(--navbar-height));
 
@@ -22,4 +23,37 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+
+/* Animation */
+@keyframes zoomOut {
+    from {
+        width: var(--current-width);
+    }
+    to {
+        width: var(--new-width);
+    }
+}
+
+
+.close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: none;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+    color: var(--black-color);
+    background-color: #ddd;
 }
