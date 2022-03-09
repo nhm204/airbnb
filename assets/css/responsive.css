@@ -12,6 +12,10 @@
         display: none;
     }
 
+    .hide-wide-on-mobile-tablet {
+        width: 100%;
+    }
+
     .app__header {
         background-color: var(--white-color);
     }
@@ -76,7 +80,7 @@
         margin-top: 80px;
     }
 
-    .trip__heading {
+    .trip-discover__heading {
         font-size: 2.5rem;
         line-height: 2.8rem;
         padding-bottom: 30px;
@@ -200,7 +204,7 @@
         line-height: 2.3rem;
     }
 
-    .trip__heading {
+    .trip-discover__heading {
         width: 220px;
     }
 }

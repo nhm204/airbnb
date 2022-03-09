@@ -780,10 +780,10 @@
 
 .intro__title {
     color: var(--white-color);
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     font-weight: 500;
     padding-bottom: 24px;
-    line-height: 4rem;
+    line-height: 5.8rem;
 }
 
 .intro__btn {
@@ -810,12 +810,12 @@
 
 /* Trip Section */
 .trip-section {
-    padding: 100px 74.4px;
+    padding: 100px 0;
 }
 
-.trip__heading {
-    font-size: 3.3rem;
-    line-height: 3.7rem;
+.trip-discover__heading {
+    font-size: 4.4rem;
+    line-height: 4.7rem;
     color: var(--text-color);
     font-weight: 500;
     padding-bottom: 48px;
@@ -829,9 +829,9 @@
 .trip__item {
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 282px;
     text-decoration: none;
-    min-height: 304px;
+    min-height: 376px;
     flex-shrink: 0;
 }
 
@@ -862,4 +862,10 @@
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 2rem;
+}
+
+
+/* Discover Section */
+.discover-section {
+    padding: 0px 0 100px;
 }
