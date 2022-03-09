@@ -2,6 +2,14 @@
     overflow: hidden;
 }
 
+.app a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app button {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 /* Header */
 .app__header {
@@ -130,28 +138,28 @@
     margin-left: 12px;
 }
 
-.nav__user-menu-wrapper {
+.nav__user-menu {
     position: absolute;
     background-color: var(--white-color);
-    width: 230px;
+    width: 240px;
     margin-top: 12px;
     right: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     display: none;
 }
 
-.nav__user-menu {
+.nav__user-list {
     list-style: none;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
-.nav__user-menu:first-child {
+.nav__user-list:first-child {
     border-bottom: 1px solid var(--border-color);
 }
 
-.nav__user-menu:first-child > .nav__user-item:first-child a {
+.nav__user-list:first-child > .nav__user-item:first-child a {
     font-weight: 500;
 }
 
@@ -165,7 +173,7 @@
 }
 
 .nav__user-item a:hover {
-    background-color: #f7f7f7;
+    background-color: var(--hover-color); 
 }
 
 .nav__user-overlay {
@@ -181,7 +189,7 @@
     display: block;
 }
 
-.nav__user-checkbox:checked ~ .nav__user-menu-wrapper {
+.nav__user-checkbox:checked ~ .nav__user-menu {
     display: block;
 }
 
@@ -209,7 +217,7 @@
 }
 
 .header-searchbar:focus-within {
-    background-color: #f7f7f7;
+    background-color: var(--hover-color);
 }
 
 .header-searchbar:focus-within .header-searchbar__item-wrapper:first-child {
@@ -254,7 +262,7 @@
     outline: none;
     border: none;
     font-size: 1.5rem;
-    color: #717171;
+    color: var(--sub-text-color);
     background: none;
 }
 
@@ -400,31 +408,31 @@
     position: absolute;
     left: 0;
     top: 100%;
-    width: 500px;
-    height: 160px;
+    width: 400px;
     margin-top: 12px;
     max-height: calc(100vh - 150px);
-    padding: 32px 32px;
+    padding: 32px 0;
     border-radius: 32px;
     z-index: 1;
     overflow: hidden;
     background-color: var(--white-color);
-    /* box-shadow: 0px 10px 20px rgb(0 0 0 / 25%); */
     box-shadow: 0px 6px 20px rgb(0 0 0 / 20%);
     display: none;
 }
 
 .searchbar__location-heading {
-    margin-bottom: 16px;
+    margin: 0 32px;
+    padding-bottom: 8px;
 }
 
 .searchbar__location-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 58px;
+    margin: 8px 32px 24px;
     padding: 8px 24px;
     border-radius: 32px;
-    height: 58px;
     background-color: var(--white-color);
     border: 1px solid var(--border-color);
     box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
@@ -446,6 +454,44 @@
 .searchbar__location-video-wrapper {
     height: 28px;
 }
+
+.searchbar__location-list {
+    list-style: none;
+}
+
+.searchbar__location-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.searchbar__location-item:hover {
+    background-color: var(--hover-color);
+}
+
+.searchbar__location-item-img {
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.searchbar__location-item-title {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.searchbar__location-item-desc {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--sub-text-color);
+    font-weight: 300;
+}
+
 
 
 /* Calendar in Check in & Check out */
@@ -492,7 +538,7 @@
 }
 
 .add-dates__option--not-selected:hover {
-    background-color: #f7f7f7;
+    background-color: var(--hover-color);
     cursor: pointer;
 }
 
@@ -543,12 +589,12 @@
 
 .calendar__month button:hover {
     cursor: pointer;
-    background-color: #f7f7f7;
+    background-color: var(--hover-color);
 }
 
 .calendar__days {
     font-size: 1.2rem;
-    color: #717171;
+    color: var(--sub-text-color);
     font-weight: 500;
     display: flex;
     cursor: text;
@@ -648,7 +694,7 @@
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.8rem;
-    color: #717171;
+    color: var(--sub-text-color);
 }
 
 .add-guest__item-label a {
@@ -672,7 +718,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
-    color: #717171;
+    color: var(--sub-text-color);
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -711,16 +757,13 @@
 }
 
 .intro__container {
-    padding: 60px 0 80px;
+    padding: 60px 0 100px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .intro__img {
     display: block;
-    width: 85%;
+    width: 100%;
     border-radius: 12px;
     filter: brightness(0.6) contrast(1.2) saturate(1.8);
     margin: 0 auto;
@@ -732,7 +775,7 @@
     flex-direction: column;
     min-width: 100%;
     position: absolute;
-    top: 65%;
+    top: 58%;
 }
 
 .intro__title {
@@ -762,4 +805,61 @@
     background: -webkit-linear-gradient(90deg, rgb(111, 1, 156) 0%, rgb(198, 1, 126) 135.12%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+/* Trip Section */
+.trip-section {
+    padding: 100px 74.4px;
+}
+
+.trip__heading {
+    font-size: 3.3rem;
+    line-height: 3.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding-bottom: 48px;
+}
+
+.trip__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip__item {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    text-decoration: none;
+    min-height: 304px;
+    flex-shrink: 0;
+}
+
+.trip__item-img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.trip__item-info {
+    flex: 1;
+    color: var(--white-color);
+    padding: 20px 16px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.trip__item-info h4 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 8px;
+}
+
+.trip__item-info span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
 }

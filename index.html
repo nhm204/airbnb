@@ -71,8 +71,8 @@
 
                             <label for="nav-user" class="nav__user-overlay"></label>
 
-                            <div class="nav__user-menu-wrapper">
-                                <ul class="nav__user-menu">
+                            <div class="nav__user-menu">
+                                <ul class="nav__user-list">
                                     <li class="nav__user-item">
                                         <a href="#" class="">Sign up</a>
                                     </li>
@@ -80,7 +80,7 @@
                                         <a href="#" class="">Login</a>
                                     </li>
                                 </ul>
-                                <ul class="nav__user-menu">
+                                <ul class="nav__user-list">
                                     <li class="nav__user-item">
                                         <a href="#" class="">Host your home</a>
                                     </li>
@@ -106,15 +106,57 @@
                             <input id="location" type="text" autocomplete="off" class="header-searchbar__input" placeholder="Where are you going?">
 
                             <div class="searchbar__location">
-                                <h3 class="searchbar__location-heading">GO ANYWHERE, ANYTIME</h3>
-                                <div class="searchbar__location-btn">
-                                    <span class="searchbar__location-btn-heading">I'm flexible</span>
-                                    <div class="searchbar__location-video-wrapper">
-                                        <video control autoplay="" crossorigin="anonymous" playsinline="" poster="https://a0.muscache.com/pictures/04c0a34f-9880-48b7-a69c-49011f602a35.jpg" preload="auto" width="28" height="28">
-                                            <source src="https://a0.muscache.com/videos/vopt/13/e1/13e14ffc-822c-5e84-aa58-d6a6527dc218/13e14ffc822c5e84aa58d6a6527dc218.mp4?impolicy=low_quality" type="video/mp4" />
-                                        </video>                                        
+                                <div class="searchbar__location-header">
+                                    <h3 class="searchbar__location-heading">GO ANYWHERE, ANYTIME</h3>
+                                    <div class="searchbar__location-btn">
+                                        <span class="searchbar__location-btn-heading">I'm flexible</span>
+                                        <div class="searchbar__location-video-wrapper">
+                                            <video control autoplay="" crossorigin="anonymous" playsinline="" poster="https://a0.muscache.com/pictures/04c0a34f-9880-48b7-a69c-49011f602a35.jpg" preload="auto" width="28" height="28">
+                                                <source src="https://a0.muscache.com/videos/vopt/13/e1/13e14ffc-822c-5e84-aa58-d6a6527dc218/13e14ffc822c5e84aa58d6a6527dc218.mp4?impolicy=low_quality" type="video/mp4" />
+                                            </video>                                        
+                                        </div>
                                     </div>
                                 </div>
+                                <span>
+                                    <h3 class="searchbar__location-heading">GETAWAYS NEAR YOU</h3>
+                                    <ul class="searchbar__location-list">
+                                        <li class="searchbar__location-item">
+                                            <img src="https://a0.muscache.com/im/pictures/aff9e173-b551-44e4-80f3-bd9b9d632f8b.jpg?im_w=240&im_q=lowq" alt="" class="searchbar__location-item-img">
+                                            <div>
+                                                <span class="searchbar__location-item-title">Hai Phong</span>
+                                                <span class="searchbar__location-item-desc">1 .5 hour drive</span>
+                                            </div>
+                                        </li>
+                                        <li class="searchbar__location-item">
+                                            <img src="https://a0.muscache.com/im/pictures/6a4bb597-0944-480b-94cc-b183c724f612.jpg?im_w=240&im_q=lowq" alt="" class="searchbar__location-item-img">
+                                            <div>
+                                                <span class="searchbar__location-item-title">Ha Giang</span>
+                                                <span class="searchbar__location-item-desc">3.5 hour drive</span>
+                                            </div>
+                                        </li>
+                                        <li class="searchbar__location-item">
+                                            <img src="https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240&im_q=lowq" alt="" class="searchbar__location-item-img">
+                                            <div>
+                                                <span class="searchbar__location-item-title">Ha Long</span>
+                                                <span class="searchbar__location-item-desc">2 hour drive</span>
+                                            </div>
+                                        </li>
+                                        <li class="searchbar__location-item">
+                                            <img src="https://a0.muscache.com/im/pictures/2058d3d0-fba8-42f0-ba61-489b09a61a3a.jpg?im_w=240&im_q=lowq" alt="" class="searchbar__location-item-img">
+                                            <div>
+                                                <span class="searchbar__location-item-title">Ninh Binh</span>
+                                                <span class="searchbar__location-item-desc">1 hour drive</span>
+                                            </div>
+                                        </li>
+                                        <li class="searchbar__location-item">
+                                            <img src="https://a0.muscache.com/im/pictures/1a653f75-87bd-41f0-91b5-f9f2c3194984.jpg?im_w=240&im_q=lowq" alt="" class="searchbar__location-item-img">
+                                            <div>
+                                                <span class="searchbar__location-item-title">Vinh</span>
+                                                <span class="searchbar__location-item-desc">3.5 hour drive</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </span>
                             </div>
                         </div>
 
@@ -521,10 +563,44 @@
 
             <!-- Trip Section -->
             <div class="trip-section">
-                <div class="grid wide">
-
+                <div class="grid ">
+                    <h1 class="trip__heading">Inspiration for your next trip</h1>
+                    <div class="trip__content">
+                        <a href="#" class="trip__item">
+                            <img src="https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_q=highq&im_w=720" alt="" class="trip__item-img">
+                            <div class="trip__item-info" style="background-color: #3ab4ff;">
+                                <h4 class="trip__item-name">Hanoi</h4>
+                                <span>505 kilometers away</span>
+                            </div>
+                        </a>
+                    
+                        <a href="#" class="trip__item">
+                            <img src="https://a0.muscache.com/im/pictures/88960fb8-6ebb-48d2-ac44-4f5e08501435.jpg?im_q=highq&im_w=720" alt="" class="trip__item-img">
+                            <div class="trip__item-info" style="background-color: #cc2d4a;">
+                                <h4 class="trip__item-name">Ha Long</h4>
+                                <span>204 kilometers away</span>
+                            </div>
+                        </a>
+                    
+                        <a href="#" class="trip__item">
+                            <img src="https://a0.muscache.com/im/pictures/64530077-ffc7-481b-8cca-50ec8c5f3324.jpg?im_q=highq&im_w=720" alt="" class="trip__item-img">
+                            <div class="trip__item-info" style="background-color: #bc1a6e;">
+                                <h4 class="trip__item-name">Ho Chi Minh</h4>
+                                <span>2 kilometers away</span>
+                            </div>
+                        </a>
+                    
+                        <a href="#" class="trip__item">
+                            <img src="https://a0.muscache.com/im/pictures/99eb5993-4277-4c1e-8db1-b639a96758a0.jpg?im_q=highq&im_w=720" alt="" class="trip__item-img">
+                            <div class="trip__item-info" style="background-color: #d93b30;">
+                                <h4 class="trip__item-name">Da Nang</h4>
+                                <span>103 kilometers away</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <footer class="app__footer">
