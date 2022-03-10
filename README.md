@@ -1,1 +1,1 @@
-This is my project base on Airbnb website!
+This is my basic project base on Airbnb website!
