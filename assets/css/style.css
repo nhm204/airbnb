@@ -761,12 +761,14 @@
     position: relative;
 }
 
-.intro__img {
-    display: block;
-    width: 100%;
+.intro__img-wrapper {
     border-radius: 12px;
-    filter: brightness(0.6) contrast(1.2) saturate(1.8);
-    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.intro__img {
+    width: 100%;
 }
 
 .intro__content {
