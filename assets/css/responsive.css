@@ -93,6 +93,20 @@
     .trip__content::-webkit-scrollbar {
         display: none;
     }
+
+    
+
+    .discover__item-heading {
+        width: 190px;
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
+
+    .shop__content-heading {
+        width: 190px;
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
 }
 
 
@@ -152,6 +166,20 @@
         font-size: 2.3rem;
         line-height: 2.6rem;
     }
+
+    .discover-section,
+    .shop-section {
+        padding-bottom: 60px;
+    }
+
+    .shop__content {
+        margin-right: 40px;
+    }
+
+    .shop__img {
+        height: 204px;
+        overflow: unset;
+    }
 }
 
 
@@ -198,7 +226,7 @@
     }
 
     .trip-section {
-        padding: 48px 0 48px 31px;
+        padding: 48px 0 48px 24px;
     }
 
     .trip__item {
@@ -208,7 +236,7 @@
     }
 
     .trip__item:last-child {
-        margin-right: 31px;
+        margin-right: 24px;
     }
 
     .trip__item-info h4 {
@@ -218,5 +246,39 @@
 
     .trip-discover__heading {
         width: 220px;
+    }
+
+    .discover-section,
+    .shop-section {
+        margin: 0 24px;
+        padding-bottom: 48px;
+    }
+
+    .col:last-child .discover__item {
+        margin-top: 16px;
+    }
+
+    .discover__item {
+        height: 488px;
+    }
+
+    .discover__item-img {
+        height: 100%;
+    }
+
+    .discover__item-content {
+        top: 8%;
+    }
+
+    .shop__content-wrapper {
+        display: block;
+    }
+
+    .shop__content {
+        padding-bottom: 30px;
+    }
+
+    .shop__img {
+        width: 190%;
     }
 }

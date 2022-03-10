@@ -871,3 +871,98 @@
 .discover-section {
     padding: 0px 0 100px;
 }
+
+.discover__item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.discover__item-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.discover__item-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 10%;
+}
+
+.discover__item-heading {
+    width: 290px;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+    color: var(--white-color);
+    padding-bottom: 24px;
+}
+
+.discover__item-btn {
+    height: 48px;
+    width: fit-content;
+    padding: 0 24px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.discover__item-btn:hover {
+    background-color: var(--background-color);
+}
+
+
+/* Shop Gift Cards Section */
+.shop-section {
+    padding-bottom: 140px;
+}
+
+.shop__content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.shop__content {
+    margin-right: 100px;
+}
+
+.shop__content-heading {
+    width: 280px;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 5.6rem;
+    color: var(--text-color);
+    padding-bottom: 24px;
+}
+
+.shop__content-btn {
+    display: block;
+    height: 48px;
+    width: fit-content;
+    padding: 0 24px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--text-color);
+}
+
+.shop__content-btn:hover {
+    background-color: var(--black-color);
+}
+
+.shop__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    overflow: hidden;
+}
