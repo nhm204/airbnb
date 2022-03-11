@@ -49,6 +49,10 @@
         margin-left: -40px;
     }
 
+    .sub-searchbar-wrapper:hover {
+        cursor: pointer;
+    }
+
     .sub-searchbar__content {
         font-size: 1.4rem;
         font-weight: 500;
@@ -64,13 +68,6 @@
     .header-searchbar__btn-icon {
         font-size: 1.2rem;
     }
-    
-    
-
-    
-
-
-
 
     .intro__container {
         padding: 60px 0;
@@ -86,15 +83,13 @@
         padding-bottom: 30px;
     }
 
-    .trip__content {
+    /* .trip__content {
         overflow-x: scroll;
     }
 
     .trip__content::-webkit-scrollbar {
         display: none;
-    }
-
-    
+    } */
 
     .discover__item-heading {
         width: 190px;
@@ -107,6 +102,33 @@
         font-size: 3.4rem;
         line-height: 3.8rem;
     }
+
+    .footer__header {
+        display: block;
+        border: none;
+    }
+
+    .footer__content {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .footer__bottom-container {
+        flex-direction: column-reverse;
+    }
+
+    .footer__bottom-left-side {
+        display: block;
+    }
+
+    .footer__bottom-right-side {
+        margin-bottom: 16px;
+    }
+
+    .footer__bottom-copyright span {
+        display: none;
+    }
+
+    
 }
 
 
@@ -118,11 +140,11 @@
         display: none;
     }
 
-    
-
     .subnav__item-btn {
         color: var(--text-color);
     }
+
+
 
     .intro__img-wrapper {
         height: 644px;
@@ -149,18 +171,18 @@
     }
 
     .trip-section {
-        padding: 60px 0 60px 62px;
+        padding: 60px 0;
     }
 
-    .trip__item {
+    /* .trip__item {
         margin-right: 16px;
         width: 260px;
         min-height: 340px;
     }
 
     .trip__item:last-child {
-        margin-right: 62px;
-    }
+        margin-right: 0;
+    } */
 
     .trip__item-info h4 {
         font-size: 2.3rem;
@@ -179,6 +201,23 @@
     .shop__img {
         height: 204px;
         overflow: unset;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__content {
+        padding: 24px 0;
+    }
+
+    .footer__item {
+        flex-basis: 33.333%;
+    }
+
+    .footer__bottom-policy {
+        justify-content: center;
     }
 }
 
@@ -229,7 +268,7 @@
         padding: 48px 0 48px 24px;
     }
 
-    .trip__item {
+    /* .trip__item {
         margin-right: 16px;
         width: 210px;
         min-height: 280px;
@@ -237,7 +276,7 @@
 
     .trip__item:last-child {
         margin-right: 24px;
-    }
+    } */
 
     .trip__item-info h4 {
         font-size: 2rem;
@@ -281,4 +320,17 @@
     .shop__img {
         width: 190%;
     }
+
+    .app__footer > .grid {
+        margin: 0 24px;
+    }
+
+    .footer__content {
+        padding: 32px 0;
+    }
+
+    .footer__bottom-container {
+        align-items: flex-start;
+    }
+
 }
