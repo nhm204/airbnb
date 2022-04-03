@@ -820,21 +820,17 @@
     line-height: 4.7rem;
     color: var(--text-color);
     font-weight: 500;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
 }
 
 .trip__content {
     display: flex;
-    /* overflow-x: auto;
-    scroll-snap-type: x mandatory; */
+    overflow: unset;
 }
 
 .trip__item {
     display: flex;
-
-    /* gap: 1rem; */
-    /* scroll-snap-align: start;
-    scroll-snap-stop: always; */
+    padding-top: 16px;
 }
 
 .trip__item-link {

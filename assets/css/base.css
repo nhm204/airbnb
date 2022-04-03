@@ -27,6 +27,14 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Animation */
 @keyframes zoomOut {
     from {
